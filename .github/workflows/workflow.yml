@@ -20,7 +20,7 @@ jobs:
         run: npm run lint
 
       - name: Build Docker image
-        run: docker build -t my-image .
+        run: docker build -t devops:1 .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
@@ -29,4 +29,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push volodymyr999/volodymyr999/devops:1
+        run: docker push volodymyr999/devops:1
