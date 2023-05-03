@@ -29,4 +29,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push volodymyr999/node-docker:1.0.0
+        run: docker push volodymyr999/volodymyr999/devops:1
